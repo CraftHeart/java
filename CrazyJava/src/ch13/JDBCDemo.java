@@ -11,8 +11,8 @@ public class JDBCDemo {
             // 其中返回的Connection就代表了Java程序和数据库的连接
             // 不同数据库的URL写法需要查询驱动文档，用户名、密码由DBA分配
             Connection conn = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/runoob"
-                    , "root", ""
+                    "jdbc:mysql://localhost:3306/cuber"
+                    , "cuber", "2017"
             );
             // 3.使用Connection来创建一个Statement对象
             Statement statement = conn.createStatement();
@@ -38,7 +38,7 @@ public class JDBCDemo {
         /*
         * 执行DDL语句返回0，执行DML语句返回影响的条数*/
         Class.forName("com.mysql.jdbc.Driver");
-        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/runoob", "root", "");
+        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/cuber", "cuber", "2017");
         Statement statement = conn.createStatement();
 //        statement.executeUpdate("DROP TABLE IF EXISTS jdbc_test ");
         statement.executeUpdate("CREATE table IF NOT EXISTS jdbc_test (id int auto_increment PRIMARY KEY , name VARCHAR(255), sex VARCHAR(4))");
@@ -49,7 +49,7 @@ public class JDBCDemo {
 
     public static void prepareStatementDemo() throws Exception{
         Class.forName("com.mysql.jdbc.Driver");
-        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/runoob", "root", "");
+        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/cuber", "cuber", "2017");
         Statement statement = conn.createStatement();
 
         statement.executeUpdate("DROP TABLE IF EXISTS jdbc_test ");
@@ -70,7 +70,7 @@ public class JDBCDemo {
 
     public static void manageResult() throws Exception{
         Class.forName("com.mysql.jdbc.Driver");
-        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/runoob", "root", "");
+        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/cuber", "cuber", "2017");
         Statement statement = conn.createStatement();
         ResultSet resultSet = statement.executeQuery("SELECT * FROM jdbc_test WHERE sex = 'male'");
 
@@ -123,9 +123,9 @@ public class JDBCDemo {
         }
     }
     public static void main(String[] args) throws Exception{
-//        connectMysql();
+        connectMysql();
 //        executeDDL();
 //        prepareStatementDemo();
-        manageResult();
+//        manageResult();
     }
 }
