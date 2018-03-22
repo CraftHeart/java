@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CrayzJava/CrazyJava.iml" filepath="$PROJECT_DIR$/CrayzJava/CrazyJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CrazyJava/CrazyJava.iml" filepath="$PROJECT_DIR$/CrazyJava/CrazyJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaProj.iml" filepath="$PROJECT_DIR$/JavaProj.iml" />
     </modules>
   </component>
