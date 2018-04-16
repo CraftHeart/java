@@ -25,7 +25,7 @@ public class ArrayDmeo {
 
         // 多维数组
         int[][] mArr = new int[3][];
-        // 把mArr当作成一维数组，便利数组的每一个元素
+        // 把mArr当作成一维数组，遍历数组的每一个元素
         for (int[] aMArr : mArr) {
             System.out.println(aMArr);
         }
@@ -38,7 +38,7 @@ public class ArrayDmeo {
     }
 
     // 使用java8增强工具类Arrays
-    public static void ArraysDmeo() {
+    public static void ArraysDemo() {
         int[] a1 = new int[]{1, 2, 3, 4, 5};
         int[] a2 = new int[]{1, 2, 3, 4, 5};
         // 数组a1和数组a2的长度以及每个元素依次相等
@@ -56,6 +56,6 @@ public class ArrayDmeo {
     }
 
     public static void main(String[] args) {
-        ArraysDmeo();
+        ArraysDemo();
     }
 }
