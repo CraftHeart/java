@@ -17,5 +17,6 @@ public class MathDemo {
         // 四舍五入
         System.out.println("Math.round(2.3):" + Math.round(2.3));  // 2
         System.out.println("Math.round(2.6):" + Math.round(2.6));  // 3
+
     }
 }

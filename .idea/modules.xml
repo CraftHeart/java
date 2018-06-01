@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CrazyJava/CrazyJava.iml" filepath="$PROJECT_DIR$/CrazyJava/CrazyJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaProj.iml" filepath="$PROJECT_DIR$/JavaProj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThinkInJava/ThinkInJava.iml" filepath="$PROJECT_DIR$/ThinkInJava/ThinkInJava.iml" />
     </modules>
   </component>
 </project>
